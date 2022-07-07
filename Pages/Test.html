@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ip Subnet Calculate</title>
+</head>
+<body>
+
+
+<form action="http://localhost:8080" method="post">
+
+    <div>
+        <label for="IpAddr">IP ADDRESS</label>
+        <input type="text" id="IpAddr" name="IpAddr">
+
+        <label for="SubnetValue">NETMASK</label>
+        <input type="text" id="SubnetValue" name="SubnetValue">
+
+    <button type="submit">Calculate</button>
+    </div>
+
+    <div>
+        <h5>  <font color="#000000">Address:   </font><font color="#0000ff">{{.IpAddress}} </font></h5>
+        <h5>  <font color="#000000">NetMask:   </font><font color="#0000ff">{{.SubValue}} </font></h5>
+        <h5>  <font color="#000000">Subnet Mask Address:   </font><font color="#0000ff">{{.SubMaskAddr}} </font></h5>
+        <h5>  <font color="#000000">Wildcard:   </font><font color="#0000ff">{{.SubWildcard}}</font></h5>
+        <h5>  <font color="#000000">Network Address:   </font><font color="#0000ff">{{.NetAddr}}</font></h5>
+        <h5>  <font color="#000000">BroadCast Address:   </font><font color="#0000ff">{{.BrdAddr}}</font></h5>
+        <h5>  <font color="#000000">Hosts:   </font><font color="#0000ff">{{.HostsNet}}</font></h5>
+
+
+    </div>
+</form>
+
+
+</body>
+</html>
